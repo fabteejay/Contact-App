@@ -1,4 +1,5 @@
 import express from 'express';
+import { saveContact } from '../controllers/contacts';
 
 const router = express.Router();
 
@@ -10,10 +11,7 @@ router.route('/')
     });
   })
   .post((req, res) => {
-    res.status(200).send({
-      message: 'Contacts post',
-      success: true,
-    });
+    saveContact(req, res);
   })
   .put((req, res) => {
     res.status(200).send({
