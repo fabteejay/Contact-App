@@ -1,7 +1,7 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import dotenv from 'dotenv';
-import contacts from './contact';
+import contacts from './contacts';
 
 dotenv.config();
 
